@@ -1,0 +1,164 @@
+.sign-in-left{
+/*background-image: url("../imgs/Clip 2.png"), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));*/
+background-position: center;
+position: relative;
+background-image:;
+background-size: cover;
+}
+.sign-in-left img{
+	object-fit: cover;
+}
+.carousel-inner{
+height: 100%!important;
+}
+.sign-in{
+padding:70px 80px;
+}
+.sign-up{
+padding:80px 80px;
+}
+.sign-in-heading h2{
+margin-bottom: 20px;
+}
+.signin-sinup-btn{
+margin-bottom: 30px;
+border-bottom: 1px solid #ebecef;
+}
+.signin-sinup-btn button{
+background-color: transparent;
+border: none;
+margin: 0px;
+padding: 7px;
+cursor: pointer;
+}
+.signin-sinup-btn button:hover{
+border-bottom: 3px solid #18a4e1;
+}
+.signin-sinup-btn button:focus{
+outline: none;
+}
+.email-box{
+display: block;
+margin-bottom: 10px;
+}
+.email-box p,.password-box p{
+margin: 0px;
+color: #18a4e1;
+font-weight: bold;
+}
+.email-box input,.password-box input{
+margin-top: 0px;
+background-color: transparent;
+border:none;
+width: 100%;
+}
+.email-box input:focus,.password-box input:focus{
+outline: none;
+}
+.email-box,.password-box{
+padding: 5px 20px;
+border-radius: 5px;
+border:1px solid #e9eef3;
+}
+.password-box{
+display: flex;
+}
+.email-box-password-side{
+margin-right:auto;
+}
+.eye-side img{
+padding-top: 15px;
+}
+.forget-btn{
+margin-top: 10px;
+float: right;
+clear: both;
+}
+.forget-btn p{
+font-weight: bold;
+font-size: 14px;
+}
+.signinnow-btn{
+margin-top: 50px;
+}
+.signinnow-btn button{
+width: 100%;
+cursor: pointer;
+border:none;
+padding: 10px 0px;
+color: white;
+font-weight: bold;
+letter-spacing: 1px;
+border-radius: 6px;
+background-color: #18a4e1;
+}
+.row{
+width: 100%;
+}
+.signinnow-btn button:focus{
+outline: none;
+}
+.signin-logo{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.signin-logo img{
+width: 351px;
+}
+.social-media-icon button{
+border-radius: 5px;
+background-color: transparent;
+font-size: 12px;
+}
+.insta button{
+border: 2px solid #d2006b;
+color: #d2006b;
+}
+.facebook button{
+border: 2px solid #2a4edb;
+color: #2a4edb;
+}
+.google button{
+border: 2px solid #eb4e40;
+color: #eb4e40;
+}
+.gradient{
+width: 100%;
+height: 100%;
+bottom: 0%;
+left: 0%;
+position: absolute;
+background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.or{
+position: relative;
+padding: 22px;
+}
+.or-inner{
+position: absolute;
+left: 47%;
+top: 21px;
+width: 36px;
+background-color: white;
+}
+.or-inner p{
+border-radius: 50%;
+padding:5px;
+border: 1px solid black;
+}
+
+.carousel-indicators{
+bottom: 136px!important;
+}
+.carousel-indicators img{
+width: 8px!important;
+}
+
+@media only screen and (max-width: 1019px) {
+	.sign-in,.sign-up {
+    	padding: 47px 29px;
+	}
+}

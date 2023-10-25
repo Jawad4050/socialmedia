@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Solid Social</title>
+	<meta charset="utf-8">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<!-- CSS files -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/poststyle.css">
+	<link rel="stylesheet" type="text/css" href="css/msg.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="zuck-js/demo/style.css">
+	<link rel="stylesheet" href="zuck-js/dist/zuck.min.css">
+	<link rel="stylesheet" href="zuck-js/dist/skins/snapgram.css">
+	<link rel="stylesheet" href="zuck-js/dist/skins/vemdezap.css">
+	<link rel="stylesheet" href="zuck-js/dist/skins/facesnap.css">
+	<link rel="stylesheet" href="zuck-js/dist/skins/snapssenger.css">
+	<!-- Jquery -->
+	<script type="text/javascript" src="js/jquery.3.6.0.js"></script>
+
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<link rel="stylesheet" href="vidPlayer/css/player-default.css">
+	<link href="src/fileup.css" rel="stylesheet" type="text/css">
+	<!-- Font Awesome Link-->
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<script type="text/javascript">
+		$(function () {
+			$('div[onload]').trigger('onload');
+		});
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<section id="massege" class="bg-white">
+	<div class="container-fluid p-lg-3 p-0 mt-0" id="nav">
+		<div class="row massege-part m-0 pt-0">
+			<div class="col-lg-3 col-12 p-0 pr-lg-3 pr-md-3 pr-0" id="mainmassegepage">
+				<div class="logo-msg px-3 pt-lg-0 pt-4">
+					<img src="img/Solid_Social.png">
+				</div>
+				<div class="massege-leftside p-3" id="massege-leftside-main">
+					<div class="famous-doc-result d-flex py-2 my-1 border-0">
+				        <div class="message-person">
+							<div class="online-dot"></div>
+				            <img src="img/pictures/7.jpg">
+				        </div>
+				        <div class="famous-doc-text my-auto me-auto ms-3">
+				            <p>George Tarielashvili</p>
+				            <p class="mb-1">Senior UI/UX Designer</p>
+				            <p>Online</p>
+				        </div>
+				    </div>
+
+					<div class="massege-leftside-top px-0">
+						<div class="massege-heading">
+							<div class="msg-main-heading">
+								<h3 class="my-auto">Active Chats</h3>
+							</div>
+							<div class="massege-create-btn">
+								<button id="main-popup-msg-open"><i class="fas fa-ellipsis-v"></i></button>
+								<!-- Menu Bar -->
+								<div class="main-popup-msg d-none">
+									<div class="main-popup-msg-outer">
+										<button id="create-open-btn">Create Group</button>
+										<button>Show Followers</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="massege-search">
+							<form action="" method="" class="m-0 w-100">
+								<input type="text" name="" placeholder="Search....">
+								<button><img src="img/Search.svg"></button>
+							</form>
+						</div>
+					</div>
+					<div class="chat-left-side">
+						<div class="show-chats">
+							<!-- Massege opener link ...use same id with massege inner part -->
+							<div class="massege-send-list tablinks seen massegeactive" onclick="openmassege(event,'a')">
+								<div class="chat-send-box">
+									<div class="chat-send-img">
+										<img src="img/pictures/6.jpg">
+									</div>
+									<div class="chat-person-info w-100">
+										<div class="chat-person-infotop">
+											<div class="chat-person-name">
+												<p>Selena Mike</p>
+											</div>
+											<div class="new-msg font2 ms-auto">
+												<p class="m-0">1</p>
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="chat-person-massge font1">
+												<p>Lorem Ipsem is used....</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="massege-send-list tablinks" onclick="openmassege(event,'b')">
+								<div class="chat-send-box ">
+									<div class="chat-send-img">
+										<img src="img/pictures/2.jpg">
+									</div>
+									<div class="chat-person-info w-100">
+										<div class="chat-person-infotop">
+											<div class="chat-person-name">
+												<p>Selena Mike</p>
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="chat-person-massge font1">
+												<p>Typing....</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="massege-send-list tablinks" onclick="openmassege(event,'c')">
+								<div class="chat-send-box ">
+									<div class="chat-send-img">
+										<img src="img/pictures/3.jpg">
+									</div>
+									<div class="chat-person-info w-100">
+										<div class="chat-person-infotop">
+											<div class="chat-person-name">
+												<p>Selena Mike</p>
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="chat-person-massge font1">
+												<p>Typing....</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Add Member List -->
+				<div class="group-step-1 bg-white h-100 d-none">
+					<div class="group-step-1-header pt-5 pb-2">
+						<div class="row m-0">
+							<div class="col-2">
+								<button class="btn text-dark" id="close-main-cg"><i
+										class="fas fa-arrow-left"></i></button>
+							</div>
+							<div class="col-10 my-auto">
+								<h5 class="my-auto">Add Group Members</h5>
+							</div>
+						</div>
+					</div>
+					<div class="group-step-search m-3">
+						<form>
+							<button><img src="img/svg/Search.svg"></button>
+							<input type="text" name="search" placeholder="search">
+						</form>
+					</div>
+					<div class="group-step-search-result">
+						<!-- Show Result -->
+						<div class="group-step-search-result-inner d-flex p-3">
+							<div class="my-auto me-3">
+								<input type="checkbox" id="1" name="" value="">
+							</div>
+							<div class="group-step-search-result-img">
+								<img src="img/profile.png">
+							</div>
+							<div class="ps-3 group-step-search-result-text my-auto">
+								<p class="my-auto">Lisa Westfall</p>
+							</div>
+						</div>
+						<!-- Show Result -->
+						<!-- Show Result -->
+						<div class="group-step-search-result-inner d-flex p-3">
+							<div class="my-auto me-3">
+								<input type="checkbox" id="1" name="" value="">
+							</div>
+							<div class="group-step-search-result-img">
+								<img src="img/profile.png">
+							</div>
+							<div class="ps-3 group-step-search-result-text my-auto">
+								<p class="my-auto">Lisa Westfall</p>
+							</div>
+						</div>
+						<!-- Show Result -->
+						<!-- Show Result -->
+						<div class="group-step-search-result-inner d-flex p-3">
+							<div class="my-auto me-3">
+								<input type="checkbox" id="1" name="" value="">
+							</div>
+							<div class="group-step-search-result-img">
+								<img src="img/profile.png">
+							</div>
+							<div class="ps-3 group-step-search-result-text my-auto">
+								<p class="my-auto">Lisa Westfall</p>
+							</div>
+						</div>
+						<!-- Show Result -->
+						<!-- Show Result -->
+						<div class="group-step-search-result-inner d-flex p-3">
+							<div class="my-auto me-3">
+								<input type="checkbox" id="1" name="" value="">
+							</div>
+							<div class="group-step-search-result-img">
+								<img src="img/profile.png">
+							</div>
+							<div class="ps-3 group-step-search-result-text my-auto">
+								<p class="my-auto">Lisa Westfall</p>
+							</div>
+						</div>
+						<!-- Show Result -->
+						<!-- Show Result -->
+						<div class="group-step-search-result-inner d-flex p-3">
+							<div class="my-auto me-3">
+								<input type="checkbox" id="1" name="" value="">
+							</div>
+							<div class="group-step-search-result-img">
+								<img src="img/profile.png">
+							</div>
+							<div class="ps-3 group-step-search-result-text my-auto">
+								<p class="my-auto">Lisa Westfall</p>
+							</div>
+						</div>
+						<!-- Show Result -->
+						<!-- Show Result -->
+						<div class="group-step-search-result-inner d-flex p-3">
+							<div class="my-auto me-3">
+								<input type="checkbox" id="1" name="" value="">
+							</div>
+							<div class="group-step-search-result-img">
+								<img src="img/profile.png">
+							</div>
+							<div class="ps-3 group-step-search-result-text my-auto">
+								<p class="my-auto">Lisa Westfall</p>
+							</div>
+						</div>
+						<!-- Show Result -->
+					</div>
+					<div class="create-group-btn mx-2 pt-3">
+						<button class="btn w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create
+							Group</button>
+					</div>
+				</div>
+				<!-- Edit Profile page-->
+				<div class="group-step-2 bg-white h-100 d-none">
+					<div class="group-step-1-header pt-5 pb-2">
+						<div class="row m-0">
+							<div class="col-2">
+								<button class="btn"><i class="fas fa-arrow-left"></i></button>
+							</div>
+							<div class="col-10 my-auto">
+								<h5 class="my-auto">New Group</h5>
+							</div>
+						</div>
+					</div>
+					<div class="group-add-img">
+						<img src="img/doctor-who-save.png" class="group-add-img-main">
+						<div class="group-add-img-shadow"></div>
+						<div class="group-add-img-btn">
+							<form action="" method="" enctype="multipart/form-data">
+								<input type="file" id="uploadimg" name="" multiple />
+								<label for="uploadimg"><img src="img/svg/addphoto.svg"></label>
+								<p class="m-0 text-white">Change Group Image</p>
+							</form>
+						</div>
+					</div>
+					<div class="group-add-form">
+						<form>
+							<div class="feild my-3 mb-4">
+								<input class="w-100 px-3" type="text" name="" placeholder="Group Name">
+							</div>
+							<div class="feild my-3 mb-4">
+								<div class="custom-select w-100">
+									<select>
+										<option value="0" class="px-0">Group Category</option>
+									</select>
+								</div>
+							</div>
+							<div class="feild my-3 mb-4">
+								<textarea placeholder="Description"></textarea>
+							</div>
+							<button class="btn w-100">Save</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-9 col-12 p-0">
+				<div class="row m-0">
+					<div class="col-lg-8 col-md-8 col-12 px-1 d-lg-block d-md-block disp-mobile-none bg m-0 "
+						id="innermassegepage">
+						<!-- Massege inner part and use same id on massege link -->
+						<div class="massege-main pb-1">
+							<div id="a" class="tabcontent p-0">
+								<div class="massege-box p-0">
+									<div class="massege-box-top p-3">
+										<div class="msgclosebtn d-lg-none d-md-none d-block">
+											<button class="closebtnmassege"><i class="fas fa-arrow-left"></i></button>
+										</div>
+										<div class="massege-box-img my-auto">
+											<img src="img/pictures/6.jpg">
+										</div>
+										<div class="massege-box-personname">
+											<h5>Lisa Westfall</h5>
+											<div class="font1">
+												<div class="dotonline  blues"></div>
+												<p class="m-0 font-weight-bold blues">Active Now</p>
+											</div>
+										</div>
+										<div class="massege-box-btn">
+											<button class="profile-edit-btn"><i class="fas fa-ellipsis-v"></i></button>
+											<div class="profile-edit-popup d-none">
+												<div class="edit-pro-popup-outer">
+													<a href="editprofile.php" id="edit-create-open-btn"
+														class="m-0 nav-link text-dark">Edit Profile</a>
+													<a href="editgroup.php" id="edit-create-open-btn"
+														class="m-0 nav-link text-dark">Edit Group</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-box-msg">
+										<!-- Reciive Massege -->
+										<div class="">
+											<p class="text-center m-0">Today</p>
+										</div>
+										<div class="recice-chat">
+											<div class="recice-chat-massege">
+												<div class="recice-chat-img">
+													<img src="img/pictures/1.jpg">
+												</div>
+												<div class="recice-chat-text">
+													<p>This First Massege in Our Website Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+														ali</p>
+												</div>
+												<!--<p class="msgtime">2:23 PM</p>-->
+											</div>
+										</div>
+
+										<!-- Send Massege -->
+										<div class="sent-chat">
+											<div class="send-chat-massege d-flex">
+												<div class="sent-chat-text ms-auto">
+													<p>This First Massege in Our Website </p>
+												</div>
+											</div>
+											<p class="msgtime float-right">2:23 PM</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="massege-search message-input m-3 bg-white border-0">
+									<form action="" method="" class="m-0 w-100">
+										<input type="text" name="" placeholder="Message....">
+										<button><img src="img/smile.svg"></button>
+										<button><img src="img/paperclip.svg"></button>
+										<button class="send-btn"><img src="img/send.svg"></button>
+									</form>
+								</div>
+							</div>
+							<div id="b" class="tabcontent p-0 change-display">
+								<div class="massege-box p-0">
+									<div class="massege-box-top p-3">
+										<div class="msgclosebtn d-lg-none d-md-none d-block">
+											<button class="closebtnmassege"><i class="fas fa-arrow-left"></i></button>
+										</div>
+										<div class="massege-box-img my-auto">
+											<img src="img/pictures/7.jpg">
+										</div>
+										<div class="massege-box-personname">
+											<h5>Lisa Westfall</h5>
+											<div class="font1">
+												<div class="dotonline  blues"></div>
+												<p class="m-0 font-weight-bold blues">Active Now</p>
+											</div>
+										</div>
+										<div class="massege-box-btn">
+											<button class="profile-edit-btn"><i class="fas fa-ellipsis-v"></i></button>
+											<div class="profile-edit-popup d-none">
+												<div class="edit-pro-popup-outer">
+													<a href="editprofile.php" id="edit-create-open-btn"
+														class="m-0 nav-link text-dark">Edit Profile</a>
+													<a href="editgroup.php" id="edit-create-open-btn"
+														class="m-0 nav-link text-dark">Edit Group</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-box-msg">
+										<!-- Reciive Massege -->
+										<div class="">
+											<p class="text-center m-0">Today</p>
+										</div>
+										<div class="recice-chat">
+											<div class="recice-chat-massege">
+												<div class="recice-chat-img">
+													<img src="img/pictures/1.jpg">
+												</div>
+												<div class="recice-chat-text">
+													<p>This First Massege in Our Website Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+														ali</p>
+												</div>
+												<!--<p class="msgtime">2:23 PM</p>-->
+											</div>
+										</div>
+
+										<!-- Send Massege -->
+										<div class="sent-chat">
+											<div class="send-chat-massege d-flex">
+												<div class="sent-chat-text ms-auto">
+													<p>This First Massege in Our Website </p>
+												</div>
+											</div>
+											<p class="msgtime float-right">2:23 PM</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="massege-search message-input m-3 bg-white border-0">
+									<form action="" method="" class="m-0 w-100">
+										<input type="text" name="" placeholder="Message....">
+										<button><img src="img/smile.svg"></button>
+										<button><img src="img/paperclip.svg"></button>
+										<button class="send-btn"><img src="img/send.svg"></button>
+									</form>
+								</div>
+							</div>
+							<div id="c" class="tabcontent p-0 change-display">
+								<div class="massege-box p-0">
+									<div class="massege-box-top p-3">
+										<div class="msgclosebtn d-lg-none d-md-none d-block">
+											<button class="closebtnmassege"><i class="fas fa-arrow-left"></i></button>
+										</div>
+										<div class="massege-box-img my-auto">
+											<img src="img/pictures/8.jpg">
+										</div>
+										<div class="massege-box-personname">
+											<h5>Lisa Westfall</h5>
+											<div class="font1">
+												<div class="dotonline  blues"></div>
+												<p class="m-0 font-weight-bold blues">Active Now</p>
+											</div>
+										</div>
+										<div class="massege-box-btn">
+											<button class="profile-edit-btn"><i class="fas fa-ellipsis-v"></i></button>
+											<div class="profile-edit-popup d-none">
+												<div class="edit-pro-popup-outer">
+													<a href="editprofile.php" id="edit-create-open-btn"
+														class="m-0 nav-link text-dark">Edit Profile</a>
+													<a href="editgroup.php" id="edit-create-open-btn"
+														class="m-0 nav-link text-dark">Edit Group</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="text-box-msg">
+										<!-- Reciive Massege -->
+										<div class="">
+											<p class="text-center m-0">Today</p>
+										</div>
+										<div class="recice-chat">
+											<div class="recice-chat-massege">
+												<div class="recice-chat-img">
+													<img src="img/pictures/1.jpg">
+												</div>
+												<div class="recice-chat-text">
+													<p>This First Massege in Our Website Lorem ipsum dolor sit amet, consectetur
+														adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+														ali</p>
+												</div>
+												<!--<p class="msgtime">2:23 PM</p>-->
+											</div>
+										</div>
+
+										<!-- Send Massege -->
+										<div class="sent-chat">
+											<div class="send-chat-massege d-flex">
+												<div class="sent-chat-text ms-auto">
+													<p>This First Massege in Our Website </p>
+												</div>
+											</div>
+											<p class="msgtime float-right">2:23 PM</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="massege-search message-input m-3 bg-white border-0">
+									<form action="" method="" class="m-0 w-100">
+										<input type="text" name="" placeholder="Message....">
+										<button><img src="img/smile.svg"></button>
+										<button><img src="img/paperclip.svg"></button>
+										<button class="send-btn"><img src="img/send.svg"></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-12 p-0 pr-lg-3 pr-md-3 pr-0 bg-white p-2 b-5 d-lg-block d-none">
+						<div class="massege-rightside">
+							<div class="rightside-top py-3 px-2 d-flex">
+								<div class="closebox-btn">
+									<img src="img/close.svg">
+								</div>
+								<h5 class="my-auto ms-3">Chat Details</h5>
+							</div>
+							<div class="row m-0">
+								<div class="famous-doc-result d-flex p-2 my-1 border-0">
+							        <div class="message-person">
+							        	<div class="online-dot"></div>
+							            <img src="img/pictures/7.jpg">
+							        </div>
+							        <div class="famous-doc-text my-auto me-auto ms-3">
+							            <p>Lorem Ipsum</p>
+							            <p>3 members<br>Last message:  Today, 09:56</p>
+							        </div>
+							    </div>
+							</div>
+							<div class="row m-0 my-2">
+								<div class="col-6 rightside-voice">
+									<button class="btn">Voice chat</button>
+								</div>
+								<div class="col-6 rightside-video">
+									<button class="btn">Video call</button>
+								</div>
+							</div>
+							<div class="row m-0 mt-5 mb-2">
+								<div class="col-6">
+									<p class="my-auto">People</p>
+								</div>
+								<div class="col-6 userbtns text-end">
+									<button class="btn ms-auto"><img src="img/user-plus.svg"></button>
+									<button class="btn"><img src="img/down.svg"></button>
+								</div>
+							</div>
+							<div class="row m-0">
+								<div class="col-12">
+									<div class="famous-doc-result people-voice d-flex p-2 my-1">
+								        <div class="famous-doc-img">
+								            <img src="img/pictures/7.jpg">
+								        </div>
+								        <div class="famous-doc-text my-auto me-auto ms-3">
+								            <p>Lorem Ipsum</p>
+								            <p>Online</p>
+								        </div>
+								        <div class="voice-btn my-auto">
+								            <button class="btn p-0"><img src="img/mic-off.svg"></button>
+								            <button class="btn p-0  ms-2 me-1"><img src="img/x-circle.svg"></button>
+								        </div>
+								    </div>
+								    <div class="famous-doc-result people-voice d-flex p-2 my-1">
+								        <div class="famous-doc-img">
+								            <img src="img/pictures/7.jpg">
+								        </div>
+								        <div class="famous-doc-text my-auto me-auto ms-3">
+								            <p>Lorem Ipsum</p>
+								            <p>Online</p>
+								        </div>
+								        <div class="voice-btn my-auto">
+								            <button class="btn p-0"><img src="img/mic-off.svg"></button>
+								            <button class="btn p-0 ms-2 me-1"><img src="img/x-circle.svg"></button>
+								        </div>
+								    </div>
+								    <div class="famous-doc-result people-voice d-flex p-2 my-1">
+								        <div class="famous-doc-img">
+								            <img src="img/pictures/7.jpg">
+								        </div>
+								        <div class="famous-doc-text my-auto me-auto ms-3">
+								            <p>Lorem Ipsum</p>
+								            <p>Online</p>
+								        </div>
+								        <div class="voice-btn my-auto">
+								            <button class="btn p-0"><img src="img/mic-off.svg"></button>
+								            <button class="btn p-0 ms-2 me-1"><img src="img/x-circle.svg"></button>
+								        </div>
+								    </div>
+								</div>
+							</div>
+							<div class="row m-0 mt-5 mb-2">
+								<div class="col-6">
+									<p class="my-auto">Chat files</p>
+								</div>
+								<div class="col-6 userbtns text-end">
+									<button class="btn"><img src="img/down.svg"></button>
+								</div>
+							</div>
+							<div class="row m-0 upload-data-box">
+								<div class="upload-data-btn d-flex my-2">
+									<div class="upload-data-img">
+										<img src="img/file-text.svg">
+									</div>
+									<div class="upload-data-text my-auto ms-3">
+										<p>Documents</p>
+										<h5 class="mb-0">8 files</h5>
+									</div>
+									<div class="upload-data-mb ms-auto my-auto">
+										<p class="mb-0">2.45 MB</p>
+									</div>
+									<div class="upload-data-arrow ms-3 my-auto">
+										<img src="img/arrow-left.svg">
+									</div>
+								</div>
+								<div class="upload-data-btn d-flex my-2">
+									<div class="upload-data-img">
+										<img src="img/file-text.svg">
+									</div>
+									<div class="upload-data-text my-auto ms-3">
+										<p>Images</p>
+										<h5 class="mb-0">8 files</h5>
+									</div>
+									<div class="upload-data-mb ms-auto my-auto">
+										<p class="mb-0">2.45 MB</p>
+									</div>
+									<div class="upload-data-arrow ms-3 my-auto">
+										<img src="img/arrow-left.svg">
+									</div>
+								</div>
+								<div class="upload-data-btn d-flex my-2">
+									<div class="upload-data-img">
+										<img src="img/file-text.svg">
+									</div>
+									<div class="upload-data-text my-auto ms-3">
+										<p>Videos</p>
+										<h5 class="mb-0">8 files</h5>
+									</div>
+									<div class="upload-data-mb ms-auto my-auto">
+										<p class="mb-0">2.45 MB</p>
+									</div>
+									<div class="upload-data-arrow ms-3 my-auto">
+										<img src="img/arrow-left.svg">
+									</div>
+								</div>
+								<div class="upload-data-btn d-flex my-2">
+									<div class="upload-data-img">
+										<img src="img/file-text.svg">
+									</div>
+									<div class="upload-data-text my-auto ms-3">
+										<p>Attachments</p>
+										<h5 class="mb-0">8 files</h5>
+									</div>
+									<div class="upload-data-mb ms-auto my-auto">
+										<p class="mb-0">2.45 MB</p>
+									</div>
+									<div class="upload-data-arrow ms-3 my-auto">
+										<img src="img/arrow-left.svg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="js/jquery.3.6.0.js"></script>
+	
+	<!-- Plugins -->
+	<script src="zuck-js/dist/zuck.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/msg.js"></script>
+
+	
+    <script type="text/javascript" src="vidPlayer/js/player.js"></script>
+    <script type="text/javascript" src="vidPlayer/js/index.js"></script>
+	</body>
+
+	</html>
