@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.121" height="21.121" viewBox="0 0 21.121 21.121">
+  <g id="mic-off" transform="translate(0.57 1.061)">
+    <line id="Line_20" data-name="Line 20" x2="19" y2="19" transform="translate(0.491 0)" fill="none" stroke="#e21717" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_87" data-name="Path 87" d="M9,7.822V10.38a2.558,2.558,0,0,0,4.366,1.808m.75-4.076V3.558a2.558,2.558,0,0,0-5.065-.512" transform="translate(-2.356 -0.714)" fill="none" stroke="#e21717" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_88" data-name="Path 88" d="M15.233,15.927A5.969,5.969,0,0,1,5,11.705V10m11.938,0v1.705a5.969,5.969,0,0,1-.094,1.049" transform="translate(-1.767 -2.04)" fill="none" stroke="#e21717" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_21" data-name="Line 21" y2="3.411" transform="translate(9.202 15.635)" fill="none" stroke="#e21717" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_22" data-name="Line 22" x2="6.822" transform="translate(5.791 19.046)" fill="none" stroke="#e21717" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

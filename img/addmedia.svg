@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="188" height="186" viewBox="0 0 188 186">
+  <g id="addmedia" transform="translate(66 -152)">
+    <g id="Rectangle_2_copy_14" data-name="Rectangle 2 copy 14" transform="translate(-66 152)" fill="#fff" stroke="#d3dde6" stroke-width="3" stroke-dasharray="15 9">
+      <rect width="188" height="186" rx="10" stroke="none"/>
+      <rect x="1.5" y="1.5" width="185" height="183" rx="8.5" fill="none"/>
+    </g>
+    <text id="Add_Media" data-name="Add Media" transform="translate(-17.57 287.271)" fill="#898fa4" font-size="18" font-family="Gilroy-Medium, Gilroy ☞" font-weight="500" opacity="0.9"><tspan x="0" y="0">Add Media</tspan></text>
+    <g id="image-add-line" transform="translate(1.55 203.531)" opacity="0.9">
+      <path id="Path_95" data-name="Path 95" d="M0,0H53.624V53.338H0Z" transform="translate(0 1.194)" fill="none" stroke="#fff" stroke-width="1"/>
+      <path id="Path_96" data-name="Path 96" d="M44.453,29.669v6.667h6.7v4.445h-6.7v6.667H39.984V40.781h-6.7V36.336h6.7V29.669ZM44.47,3a2.212,2.212,0,0,1,2.216,2.207V25.224H42.218V7.445H6.469V38.557L28.812,16.335,35.515,23v6.287l-6.7-6.667L12.785,38.559H28.812V43H4.216A2.213,2.213,0,0,1,2,40.8V5.207A2.228,2.228,0,0,1,4.216,3ZM15.406,11.89a4.445,4.445,0,1,1-4.469,4.445A4.457,4.457,0,0,1,15.406,11.89Z" transform="translate(2.469 -3)" fill="#a1a6b7" stroke="#fff" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
